@@ -3,7 +3,8 @@ NodeJS with Docker
 
 Pre Reqs:
 The linux system should have docker installed and running.
-For ubuntu: https://docs.docker.com/installation/ubuntulinux/
+Install ubuntu using vbox/vagrant: vagrant init ubuntu/trusty64; vagrant up --provider virtualbox
+Install docker: https://docs.docker.com/installation/ubuntulinux/
 
 To build and run:
 ./build_and_run.sh
