@@ -27,7 +27,7 @@ app.get('/fib/:num', function (req, res) {
     var regex=/^[0-9]+$/;
     if (!req.param("num").match(regex))
     {
-      res.send("Input should be a number\n");
+      res.send("Input should be a positive number\n");
     }
   var value = _.map(_.range(1, parseInt(req.param("num")) + 1), function(item) {return recursive(item)});
   res.send("Fibonacci series for num (" + req.param("num") +  "):" + value  + "\n");

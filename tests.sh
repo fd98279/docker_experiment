@@ -17,7 +17,7 @@ else
 fi
 
 Services_takes_numbers_only=$(curl -s localhost:49160/fib/y)
-expected_service_takes_numbers_only="Input should be a number"
+expected_service_takes_numbers_only="Input should be a positive number"
 if [ "$Services_takes_numbers_only" ==  "$expected_service_takes_numbers_only" ];
 then
   echo "Success: Service accepts only numbers as input"
